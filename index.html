@@ -4,11 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- ======== Used Tailwind CSS ====== -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <section class="form_section">
+    <section class="form_section py-8 bg-gray-50">
+        <form class="main_form max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Sorry to see you go 😢</h2>
+            <p class="mb-6 text-gray-600">You've uninstalled the PrintFriendly Chrome extension and we'd love to know what made you uninstall it and what we can do better. Please let us know by filling out the form below. Thank you!</p>
+            
+            <div class="form-group mb-4">
+                <label for="feedback_email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                <input type="email" id="feedback_email" class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter email">
+            </div>
+    
+            <div class="form-group mb-4">
+                <label for="feedback_url" class="block text-sm font-medium text-gray-700">If applicable, what URL did you have an issue with?</label>
+                <input type="text" id="feedback_url" class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" placeholder="Enter URL">
+            </div>
+    
+            <div class="form-group mb-6">
+                <label for="feedback_comment" class="block text-sm font-medium text-gray-700">Can you tell us a little more?</label>
+                <textarea id="feedback_comment" class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" rows="4" placeholder="Your comments..."></textarea>
+            </div>
+    
+            <input type="submit" name="commit" value="Send Feedback" class="btn btn-primary bg-indigo-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        </form>
+    </section>
+
+
+    <!-- ======== ANOTHER STYLE OF THIS FORM ====== -->
+    <section class="form_section py-12 bg-gray-100">
+        <form class="main_form max-w-md mx-auto bg-white p-6 rounded-lg shadow-md border border-gray-200">
+            <h2 class="text-3xl font-bold mb-4 text-gray-900">We’re sorry to see you go 😢</h2>
+            <p class="mb-6 text-gray-700">Your feedback is valuable to us. Please let us know why you uninstalled the PrintFriendly Chrome extension and how we can improve by filling out the form below. Thank you!</p>
+            
+            <div class="form-group mb-5">
+                <label for="feedback_email" class="block text-base font-medium text-gray-800">Email Address</label>
+                <input type="email" id="feedback_email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-base" placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group mb-5">
+                <label for="feedback_url" class="block text-base font-medium text-gray-800">URL with Issue (if applicable)</label>
+                <input type="text" id="feedback_url" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-base" placeholder="Enter URL">
+            </div>
+    
+            <div class="form-group mb-6">
+                <label for="feedback_comment" class="block text-base font-medium text-gray-800">Additional Comments</label>
+                <textarea id="feedback_comment" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-base" rows="5" placeholder="Your comments here..."></textarea>
+            </div>
+    
+            <button type="submit" class="w-full bg-blue-600 text-white px-6 py-3 rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300">Send Feedback</button>
+        </form>
+    </section>
+    
+    <!-- ============ ANOTHER ONE ============ -->
+    <section class="form_section py-10 bg-gray-900">
+        <form class="main_form max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-xl border border-gray-700">
+            <h2 class="text-3xl font-extrabold mb-6 text-white">We Hate to See You Go 😢</h2>
+            <p class="mb-6 text-gray-300">We’re eager to learn from your experience. Please provide us with your feedback on why you uninstalled the PrintFriendly Chrome extension and how we can make it better.</p>
+            
+            <div class="form-group mb-5">
+                <label for="feedback_email" class="block text-sm font-medium text-gray-200">Email Address</label>
+                <input type="email" id="feedback_email" class="mt-1 block w-full px-4 py-3 border border-gray-600 rounded-md bg-gray-700 text-gray-200 shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 sm:text-sm" placeholder="Enter your email">
+            </div>
+    
+            <div class="form-group mb-5">
+                <label for="feedback_url" class="block text-sm font-medium text-gray-200">URL with Issue (if applicable)</label>
+                <input type="text" id="feedback_url" class="mt-1 block w-full px-4 py-3 border border-gray-600 rounded-md bg-gray-700 text-gray-200 shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 sm:text-sm" placeholder="Enter URL">
+            </div>
+    
+            <div class="form-group mb-6">
+                <label for="feedback_comment" class="block text-sm font-medium text-gray-200">Additional Comments</label>
+                <textarea id="feedback_comment" class="mt-1 block w-full px-4 py-3 border border-gray-600 rounded-md bg-gray-700 text-gray-200 shadow-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500 sm:text-sm" rows="5" placeholder="Your comments here..."></textarea>
+            </div>
+    
+            <button type="submit" class="w-full bg-teal-600 text-white px-6 py-3 rounded-md shadow-lg hover:bg-teal-700 focus:outline-none focus:ring-4 focus:ring-teal-300">Send Feedback</button>
+        </form>
+    </section>
+    
+
+    <!-- <section class="form_section">
         <form class="main_form" action="">
             <h2>Sorry to see you go 😢</h2>
             <p>You've uninstalled the PrintFriendly Chrome extension and we'd love to know what made you uninstall it and what we can do better. Please let us know by filling out the form below. Thank you!</p>
@@ -29,6 +108,6 @@
 
             <input type="submit" name="commit" value="Send Feedback" class="btn btn-primary submit-btn">
         </form>
-    </section>
+    </section> -->
 </body>
 </html>
